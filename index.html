@@ -33,6 +33,7 @@
     -webkit-tap-highlight-color:transparent;
     color:var(--white);
     position:relative;
+    background:#050505;
   }
   body::before{
     content:"";
@@ -79,9 +80,7 @@
     justify-content:space-between;
     gap:12px;
     padding:max(14px, env(safe-area-inset-top)) 20px 12px;
-    background:rgba(5,5,5,.65);
-    backdrop-filter:blur(12px);
-    -webkit-backdrop-filter:blur(12px);
+    background:rgba(5,5,5,.88);
   }
 
   .brand{ display:flex; align-items:center; gap:12px; min-width:0; }
@@ -187,8 +186,6 @@ aspect-ratio:16/8;
     border:1px solid rgba(216,170,91,.45);
     border-radius:18px;
     padding:13px 15px;
-    backdrop-filter:blur(8px);
-    -webkit-backdrop-filter:blur(8px);
     transition:transform .18s ease, background .18s ease, border-color .18s ease;
   }
   .pill:hover{ transform:translateY(-2px); background:var(--field); border-color:var(--gold-soft); }
@@ -363,9 +360,7 @@ aspect-ratio:16/8;
     align-items:center;
     gap:10px;
     padding:10px 16px max(12px, env(safe-area-inset-bottom));
-    background:rgba(5,5,5,.92);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
+    background:rgba(5,5,5,.96);
     border-top:1px solid rgba(216,170,91,.30);
     box-shadow:0 -18px 40px rgba(0,0,0,.3);
   }
