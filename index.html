@@ -298,12 +298,17 @@ aspect-ratio:16/8;
 
     /* أزرار سريعة — شبكة مرنة بإمكانك إضافة المزيد */
     .quick{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
+      display:flex;
+      overflow-x:auto;
+      -webkit-overflow-scrolling:touch;
+      scrollbar-width:none;
       gap:12px;
       padding:18px 20px 6px;
     }
+    .quick::-webkit-scrollbar{ display:none; }
     .quick a{
+      flex-shrink:0;
+      min-width:86px;
       display:flex;
       flex-direction:column;
       align-items:center;
